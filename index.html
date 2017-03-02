@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>**evenly** is a simple javascript library to solve problem which is similar to how to divide the gold evenly?</title>
+  <meta name="keywords" content="evenly" />
+  <meta name="description" content="**evenly** is a simple javascript library to solve problem which is similar to how to divide the gold evenly?" />
+  <style type="text/css">
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  pre {
+    background-color: #f6dcd7;
+    padding: 10px 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  pre.strong {
+    font-weight: bold;
+  }
+  form, form textarea {
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+  <h1> evenly </h1>
+  <p>
+    Project <a href="https://github.com/hustcc/evenly">evenly</a> is a simple javascript library to solve problem which is similar to <strong>how to divide the gold evenly?</strong>
+  </p>
+
+  <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- sorry for ad -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-7292810486004926"
+       data-ad-slot="7806394673"
+       data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <form>
+    <br />
+    Golds: <input type='number' id='golds' value='100' placeholder='golds' />
+    Robbers: <input type='number' id='robbers' value='6' placeholder='robbers' />
+    Fixed: <input type='number' id='fixed' value='3' placeholder='fixed' />
+    <br />
+    <br />
+    <input type='button' onclick='do_evenly()' value='evenly' />
+  </form>
+  <pre id='result'>How to divide the gold evenly?</pre>
+
+  <h2> Install </h2>
+  <pre class="strong">
+npm install evenly </pre>
+  <p> Then import it. </p>
+  <pre>
+// import library use script tag.
+&lt;script type="text/javascript" src="dist/evenly.min.js"&gt;&lt;/script&gt;
+
+// or ES6 style.
+var evenly = require('evenly');</pre>
+
+  <h3>Usage</h3>
+  <pre>
+evenly(1000, 6); // 1000 golds to 6 robbers.
+  </pre>
+  <hr />
+
+  <p>
+    The code of evenly hosted on Github, click <a href="https://github.com/hustcc/evenly">here</a>. Welcome to issue or pull request.
+  </p>
+  <script type="text/javascript" src="dist/evenly.min.js"></script>
+  <script type="text/javascript">
+    function $_(id) {
+      return document.getElementById(id);
+    }
+    function do_evenly() {
+      $_('result').innerHTML = 'How to divide the gold evenly:\n\n[ ' + evenly($_('golds').value, $_('robbers').value, $_('fixed').value).join(', ') + ' ]';
+    }
+  </script>
+</body>
+</html>
