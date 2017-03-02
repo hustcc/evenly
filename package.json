@@ -1,0 +1,40 @@
+{
+  "name": "evenly",
+  "officialName": "evenly",
+  "version": "1.0.1",
+  "summary": "evenly is a simple library to solve problem how to divide the gold evenly ?",
+  "description": "How to divide the gold evenly ?",
+  "author": {
+    "name": "hustcc",
+    "url": "https://github.com/hustcc"
+  },
+  "license": "MIT",
+  "keywords": [
+    "evenly",
+    "divide",
+    "average",
+    "robber",
+    "gold"
+  ],
+  "main": "dist/evenly.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hustcc/evenly"
+  },
+  "bugs": {
+    "url": "https://github.com/hustcc/evenly/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "jshint": "^2.9.2",
+    "tape": "^3.6.1",
+    "gulp-inject-version": "^1.0.1"
+  },
+  "scripts": {
+    "lint": "jshint src/evenly.js",
+    "test": "npm run lint && npm run build && node tests/test.js",
+    "build": "gulp build"
+  },
+  "dependencies": {
+  }
+}
